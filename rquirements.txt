@@ -22,7 +22,6 @@ Before you run my project, please make sure:
 (It took me forever to install all of this, most tutorial online are not updated, if any of the libraries are not on your laptop, please use my instructions to do install)
 
 4. include "shape_predictor_68_face_landmarks.dat.bz2"
-	0)if you are too lazy to install it, you can use the "shape_predictor_68_face_landmarks.dat.bz2" file under my zip. You just need to move it ro c:/Users
 	1)open command prompt, and type "python -m pip install http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2"
 	2)find out where it is in your system and move it to c:/Users
 	3)UNZIP it

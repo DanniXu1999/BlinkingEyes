@@ -1,0 +1,36 @@
+Before you run my project, please make sure:
+
+0. make sure you have a camera on your computer or you have an external camera connected to your computer
+
+1. download and install Python 3.6.0 on your laptop/computer
+
+2. include dlib in your python: (you don't have to do this if you already have dlib in you python)
+	1)go to system properties
+	2)go to advanced system settings and then go to Environment Variables
+	3)select PATH, click Edit, and click New
+	4)paste the PATH of Python36 folder to the new block
+	5)click Complete/Finished/Done (not sure how this works)
+	6)click New, in Name, write down PYTHONPATH, and in Variable, paste the PATH of Python36.
+	7)now open command prompt, and type "python", see if the computer would give you the information of python, if yes, you are able to install dlib now.
+	8) go to the following website (https://pypi.org/simple/dlib/)and copy the address of dlib-19.8.1--cp36-cp36m-win amd 64.whl (or other related dlib if you are using other versions of Python or you are not using windows)
+	9)open command prompt again, then type "python -m pip install <addressYouJustCopy>", and press "Enter". Now dlib is installed. You can try to test it by running python and then doing "import dlib". (If you did not install numpy, you also need to do "python -m pip install numpy" before you test)
+
+3.include openCV
+	1)make sure your laptop/computer has Microsoft Visual C++ (most computer have it, but if you don't have it, please download and install)
+	2)type "python -m pip install opencv-python" on command prompt and press "Enter"
+	3)now, openCV is installed in your laptop/computer, you can test it by running python and typing "import cv2"
+(It took me forever to install all of this, most tutorial online are not updated, if any of the libraries are not on your laptop, please use my instructions to do install)
+
+4. include "shape_predictor_68_face_landmarks.dat.bz2"
+	0)if you are too lazy to install it, you can use the "shape_predictor_68_face_landmarks.dat.bz2" file under my zip. You just need to move it ro c:/Users
+	1)open command prompt, and type "python -m pip install http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2"
+	2)find out where it is in your system and move it to c:/Users
+	3)UNZIP it
+
+5. include "face_recognition"
+	1)type "python -m pip install face_recognition" on command prompt and press "Enter"
+	2)You can try to test it by running python and then doing "import face_recognition".
+
+6. make sure you turn on the authority for the camera. (You can do that in settings->Camera privacy settings, and then turn on the buttom under "Allow apps to access your camera")
+
+7. Congratulation! You are able to run my project now

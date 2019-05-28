@@ -13,3 +13,5 @@
 	I was thinking: "It should work now." However, since I need to recognize too many faces, the process became quite slow. What is more, since this library is kind of sensitive, for most of the time, my face cannot be recognized properly if I move my head in a fast speed. Anyway, it is pretty cool to try out. If I need this program works as what I expected, I need to spend more time learning machine learning and optimize the part of recognizing faces.
 
 	In the end, I have to come back to my initial idea of using arrays. In real life, who will come in and get out from a screen, all even switch places all the time while watching movies or playing games? Well, you are right, some mean computer geniuses do that. But what if the users are coming in and out from the right side of the screen at the beginning and end of movie/games? It's ok, actually, it would only influence two blinkings. This project is already able to help you to protect your eyes.
+	
+	2019/5/28 I will try to conquer this problem by tracing each person on the screen. WILL UPDATE LATER!

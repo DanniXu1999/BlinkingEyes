@@ -21,4 +21,4 @@ in main()
 	Then I do a calculation for EAR and if EAR is small enough, it counts as a blink of one eye. If both eyes are blinking, the Time of this person would be reset.
 
 For multiple people:
-	I have an array of people with their pevious locations and the time that they last exist. In every frame, if I have a face whose location is not close to any of the faces inside the array, that means I get a new face, so I create a new Ppl and then append it to the array of people. If there is an face inside the array of people did not exist for too long (more than 1 second), I will remove this Ppl from the array.
+	I have an array of people with their previous locations and the time that they last exist. In every frame, if I have a face whose location is not close to any of the faces inside the array, that means I get a new face, so I create a new Ppl and then append it to the array of people. If there is a face inside the array of people did not exist for too long (more than 1 second), I will remove this Ppl from the array.

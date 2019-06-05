@@ -16,13 +16,9 @@ distance() gives you the distance of two points in the image
 
 EAR() gives you the ratio of the closeness of an eye (the clear description of EAR is on the proposal)
 
-sameface() compares the id and tell you if that the same face
-
 in main()
 	I used cv2.VideoCapture to catch the picture from the camera and then use dlib.get_frontal_face_detector to get where is the face and then I use shape_predictor_68_face_landmarks.dat to determine where the 68 points of a face are.
 	Then I do a calculation for EAR and if EAR is small enough, it counts as a blink of one eye. If both eyes are blinking, the Time of this person would be reset.
 
 For multiple people:
-	I took a picture of the users at the beginning and make an array of empty Ppl for those users
-	inside the while loop: if the number of users increases, append new empty Ppl to the end of the array 
-			   if the number of users decreases, delete the Ppl from the end of the array
+	I have an array of people with their pevious locations and the time that they last exist. In every frame, if I have a face whose location is not close to any of the faces inside the array, that means I get a new face, so I create a new Ppl and then append it to the array of people. If there is an face inside the array of people did not exist for too long (more than 1 second), I will remove this Ppl from the array.
